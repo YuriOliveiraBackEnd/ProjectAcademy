@@ -28,7 +28,7 @@ body * {
 }
 .left-login>h1{
     font-size:2vw ;
-    color: rgb(255, 0, 0);
+    color: rgb(220, 6, 6);
 }
 .right-login{
     width: 50vw;
@@ -49,7 +49,7 @@ body * {
     box-shadow: 0px 10px 40px #00000056;
 }
 .card-login>h1{
-    color: rgb(255, 0, 0);
+    color: rgb(220, 6, 6);
     font-weight: 800;
     margin: 0;
 }
@@ -68,7 +68,7 @@ body * {
     width: 100%;
     border: none;
     border-radius: 10px;
-    padding: 15px;
+    padding: 15px 0 15px 40px;
     background-color: rgb(231, 213, 213) ;
     box-shadow: 0px 10px 40px #00000056;
     font-size: 12pt;
@@ -76,13 +76,16 @@ body * {
     color: black;
     box-sizing: border-box;
 }
+
 .textfield > label{
     color: black;
     margin-bottom: 10px;
 }
 .textfield > input ::placeholder{
     color: #f0ffff94;
+   
 }
+
 .btn-login{
     width: 100%;
     padding: 16px 0px;
@@ -93,25 +96,27 @@ body * {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: black;
-    background-color: #ff0000;
+    color: white;
+    background-color: rgb(220, 6, 6);
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px  #00000056;
 }
-.checkbox{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    font-size: 11pt;
+.btn-login:hover{
+    background-color: rgb(255, 0, 0);
 }
+
+
 input[type='checkbox']{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     accent-color: rgb(220, 6, 6);
 }
-.icon{
-    
+
+i{
+    position: absolute;
+    padding: 10px 10px;
+    margin-top: 30px;
 }
+
 
 @media only screen and (max-width:950px) {
     .card-login{
