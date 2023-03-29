@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Noto Sans',sans-serif;
-    font-size: 1.2vw;
 }
 
 td, th {
@@ -29,6 +28,10 @@ input{
 .texto{
     margin-left: 70px;
     margin-right: 70px;
+    color: black ;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    line-height: 6vh;
 
 }
 
@@ -85,13 +88,11 @@ input{
     font-size:2vw ;
     color: rgb(220, 6, 6);
 }
-
-.right-login{
-    width: 70vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.texto>h3{
+    font-size:1.3vw ;
+}
+.texto>p{
+    font-size:1vw ;
 }
 
 .card_calc{
@@ -109,6 +110,7 @@ input{
     color: rgb(220, 6, 6);
     font-weight: 800;
     margin: 0;
+    font-size: 2vw;
 }
 .textfield{
     width: 100%;
@@ -176,9 +178,10 @@ input{
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px  #00000056;
 }
-
+.btn_calc:hover{
+    background-color: rgb(255, 0, 0);
+}
 .tabela{
-    padding-top: 13vw;
     padding-bottom: 2vw;
 }
 
@@ -202,49 +205,61 @@ table {
     color: #ffffff;
     align-items: center;
     padding: 30px 35px;
-    border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
+@media only screen and (max-width:950px) {
+    .card_calc{
+        width: 85%;
+    }
+    .card_calc>h1{
+        font-size: 2.5vw;
+    }
+    .tb{
+        font-size: 2.2vw;
+    }
+    .tabela{
+        flex-direction: column;
+    }
+    .texto>h2{
+        font-size:2vw ;
+    }
+    .texto>h3{
+        font-size:1.3vw ;
+    }
+    .texto>p{
+        font-size:1.4vw ;
+    }
+    .texto{
+        line-height: 3.5vh;
+    }
+}
+
 @media only screen and (max-width:600px) {   
-    #menu-h ul {
-        max-width: 500vw;
-        list-style: none;
-        padding: 0;
-        text-align: center;
-    }
-    
-    #menu-h ul li {
-        display: inline;
-    }
-    
-    #menu-h ul li a {
-        color: #FFF;
-        padding: 20px;
-        padding-top: 5px;
-        display: inline-block;
-        text-decoration: none;
-        font-size: 2.5vw;
-    }
 
-    .texto>p,h2{
-        font-size: 3vw;
+    .card_calc{
+        width: 85%;
     }
-
-    
-    .textfield{
-        font-size: 2.5vw;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .textfield>input{
-        width: 100%;
-        height: auto;
+    .card_calc>h1{
+        font-size: 3.5vw;
     }
 
     .tabela{
         flex-direction: column;
     }
-    
+    .tb{
+        font-size: 3.2vw;
+    }
+    .texto>h2{
+        font-size:3vw; 
+    }
+    .texto>h3{
+        font-size:2.3vw ;
+    }
+    .texto>p{
+        font-size:2vw ;
+    }
+    .texto{
+        line-height: 3.5vh;
+    }
 }

@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="imcstyle.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <nav class="menu-h">
-                <ul>
-                    <img src="img/impact3.png">
 
-                    <li><a href="">Home</a></li>
-        
-                    <li><a href="">Instrutores</a></li>
-                    
-                    <li><a href="#">IMC</a></li>
-                    
-                    <li><a href="#">Contato</a></li>
-                    
-                    <li><a href="Index.html">Login</a></li>
-                </ul>
-            </nav>
-        </header>
-        <br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imcstyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-h">
+            <ul>
+                <img src="img/impact3.png">
+
+                <li><a href="">Home</a></li>
+
+                <li><a href="">Instrutores</a></li>
+
+                <li><a href="#">IMC</a></li>
+
+                <li><a href="#">Contato</a></li>
+
+                <li><a href="Index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+   
+       
+       
         <div class="texto">
-            <h2>Cálculo IMC</h2>
-            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização 
-            Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-    
-            <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua 
-            altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o 
-            resultado do IMC está entre 18,5 e 24,9.</p>
-    
-            <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare 
-            com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
-            <br>
-        </div>
+       <h2>Calculadora de IMC</h2>
+    </br>
+        <h3>O que é IMC</h3>
+        
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização
+            Mundial de Saúde para calcular o peso ideal de cada pessoa.</br>
 
-        <div class="right-login">
-            <div class="card_calc">
-                <h1>Calcule seu IMC</h1>
-                <div class="textfield">
-                    <label>Altura</label>
-                    <input type="text" name= "usuario"placeholder="Altura" id="altura">
-                </div>
-                <div class="textfield">
-                    <label>Peso</label>
-                    <input type="text" name= "senha"placeholder="Peso" id="peso">
-                </div>
-                <button class="btn_calc" id="btn_calc" onclick="calculaIMC()">Calcular</button>
-                <div class="result">
-                    <label>Resultado</label>
-                    <input type="text" name="resultado" placeholder="IMC" id="resultado" disabled>
-                </div>
-            </div>
+            O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua
+            altura elevada ao quadrado.</br></p>
+        
+
+            <h3>Quer descobrir seu IMC</h3>
+             <p>Insira seu peso e sua altura nos campos abaixo e compare
+            com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
+            <br></p>
+    </div>
+
+
+    <div class="card_calc">
+        <h1>Calcule seu IMC</h1>
+        <div class="textfield">
+            <label>Altura</label>
+            <input type="text" name="usuario" placeholder="Altura" id="altura">
         </div>
+        <div class="textfield">
+            <label>Peso</label>
+            <input type="text" name="senha" placeholder="Peso" id="peso">
+        </div>
+        <button class="btn_calc" id="btn_calc" onclick="calculaIMC()">Calcular</button>
+        <div class="textfield">
+        <div class="result">
+            <label>Resultado:</label>
+            <input type="text" name="resultado" placeholder="IMC" id="resultado" disabled>
+        </div>
+    </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="tabela">
+        <div class="tb">Tabela de IMC</div>
         <br>
-        <br>        
-        <div class="tabela">
-            <div class="tb">Tabela de IMC</div>
-            <br>
-            <table>
-                <tr>
-                  <th>IMC</th>
-                  <th>Classificação</th>
-                  <th>Obesidade(grau)</th>
-                </tr>
-                <tr>
-                  <td>MENOR QUE 18,5</td>
-                  <td>MAGREZA</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <td>ENTRE 18,5 E 24,9	</td>
-                  <td>NORMAL</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                    <td>ENTRE 25,0 E 29,9</td>
-                    <td>SOBREPESO</td>
-                    <td>I</td>
-                </tr>
-                <tr>
-                    <td>ENTRE 30,0 E 39,9</td>
-                    <td>OBESIDADE</td>
-                    <td>II</td>
-                </tr>
-                <tr>
-                    <td>MAIOR QUE 40,0</td>
-                    <td>OBESIDADE GRAVE</td>
-                    <td>III</td>
-                </tr>
-            </table>    
-        </div>
-    </body>
-    <script src="calcIMC.js"></script>
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Obesidade(grau)</th>
+            </tr>
+            <tr>
+                <td>MENOR QUE 18,5</td>
+                <td>MAGREZA</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 18,5 E 24,9 </td>
+                <td>NORMAL</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 25,0 E 29,9</td>
+                <td>SOBREPESO</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>ENTRE 30,0 E 39,9</td>
+                <td>OBESIDADE</td>
+                <td>II</td>
+            </tr>
+            <tr>
+                <td>MAIOR QUE 40,0</td>
+                <td>OBESIDADE GRAVE</td>
+                <td>III</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="calcIMC.js"></script>
+
 </html>
