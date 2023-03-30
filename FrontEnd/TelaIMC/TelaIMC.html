@@ -5,26 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="imcstyle.css">
+    <link rel="stylesheet" href="assets/css/imcstyle.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <nav class="menu-h">
-            <ul>
-                <img src="img/impact3.png">
-
-                <li><a href="">Home</a></li>
-
-                <li><a href="">Instrutores</a></li>
-
-                <li><a href="#">IMC</a></li>
-
-                <li><a href="#">Contato</a></li>
-
-                <li><a href="Index.html">Login</a></li>
-            </ul>
+    <header id="header">
+        <nav id="nav"  class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/Logo.png" alt="" width="100" height="55">
+            </div>
+          
+            <div class="nav-list" id="nav">
+                  <button id="button_mob">
+                <span id="hamburgue"> </span>
+              </button>
+                <ul id="menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Nossos personais</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <div class="login-button " id="login-mobile">
+                        <button><a href="#">Log in</a>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="login-button" id="login">
+                <button><a href="#">Log in</a>
+                </button>
+            </div>
         </nav>
     </header>
     <br>
@@ -108,6 +118,7 @@
         </table>
     </div>
 </body>
-<script src="calcIMC.js"></script>
+<script src="assets/js/calcIMC.js"></script>
+<script src="assets/js/menu.js"></script>
 
 </html>

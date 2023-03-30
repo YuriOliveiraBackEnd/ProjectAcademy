@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/78e3b8eb13.js" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
+
 <body>
+    <header id="header">
+        <nav id="nav"  class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/Logo.png" alt="" width="100" height="55">
+            </div>
+          
+            <div class="nav-list" id="nav">
+                  <button id="button_mob">
+                <span id="hamburgue"> </span>
+              </button>
+                <ul id="menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Nossos personais</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <div class="login-button " id="login-mobile">
+                        <button><a href="#">Log in</a>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="login-button" id="login">
+                <button><a href="#">Log in</a>
+                </button>
+            </div>
+        </nav>
+    </header>
     <div class="main-login">
-    <div class="left-login">
-        <h1>Faça login </br> Entre para a família extreme impact </h1>
-        <img src="Img.svg" class="left-login-img" alt="animação" >
-       
-    </div>
-    <div class="right-login">
-        <div class="card-login">
-            <h1>LOGIN</h1>
-            <div class="textfield">
-                <label for="usuario" >Email</label>
-                <input type="text" name= "usuario"placeholder="Email">
-                <i class="fa-solid fa-envelope " style="color: #dc0606;"></i>
-            </div>
-            <div class="textfield">
-                <label for="senha" >Senha</label>
-                <input type="password" name= "senha"placeholder="Senha">
-                <i class="fa-solid fa-lock " style="color: #dc0606;"></i>
-            </div>
-            <div class="textfield">
-               <div class="checkbox">
-                 <input type="checkbox" id="lembre-me">
-                 <label for="lembreMeCheckbox" id="checkboxList">Lembre-me</label>
-               </div>
-            </div>
-            <button class="btn-login">Login</button>
+        <div class="left-login">
+            <h1>Faça login </br> Entre para a família Impact Extreme </h1>
+            <img src="assets/img/img.svg" class="left-login-img" alt="animação">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Email</label>
+                    <input type="text" name="usuario" placeholder="Email">
+                    <i class="fa-solid fa-envelope " style="color: #dc0606;"></i>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                    <i class="fa-solid fa-lock " style="color: #dc0606;"></i>
+                </div>
+                <div class="textfield">
+                    <div class="checkbox">
+                        <input type="checkbox" id="lembre-me">
+                        <label for="lembreMeCheckbox" id="checkboxList">Lembre-me</label>
+                    </div>
+                </div>
+                <button class="btn-login">Login</button>
 
             </div>
         </div>
-     
+
     </div>
-    
+
     </div>
-    
+
 </body>
+<script src="assets/js/script.js"></script>
 </html>
