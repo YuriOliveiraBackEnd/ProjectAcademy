@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/78e3b8eb13.js" crossorigin="anonymous"></script>
+    <title>Home-Page</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav"  class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/impactlogo.png" alt="" width="100" height="55">
+            </div>
+          
+            <div class="nav-list" id="nav">
+                  <button id="button_mob">
+                <span id="hamburgue"> </span>
+              </button>
+                <ul id="menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Nossos personais</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <div class="login-button " id="login-mobile">
+                        <button><a href="#">Log in</a>
+                        </button>
+                    </div>
+                </ul>
+            </div>
+            <div class="login-button" id="login">
+                <button><a href="#">Log in</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="slider">
+        <!-- buttons radios -->
+        <div class="slides">
+          <input type="radio" name="btn-radio" id="radio1"  class="radios"/>
+          <input type="radio" name="btn-radio" id="radio2"  class="radios"/>
+          <input type="radio" name="btn-radio" id="radio3"  class="radios"/>
+          <input type="radio" name="btn-radio" id="radio4"  class="radios"/>
+          <!--fim-->
+          <div class="slide_img" id="first-img">
+            <h2 class="H2-slide-1"> Seja Bem vindo a </br>IMPACT </h2>
+          </div>
+          <div class="slide_img" id="secund-img">
+            <h2  class="H2-slide-2"> Horário de </br>Funcionamento </h2>
+            <p class="p-slide-2">Segunda  a sexta : 8:00 ás 00:00 </p>
+                <p class="p-slide-2" >Sábado : 8:00 ás 16:00 </p>
+                <p class="p-slide-2"> Domingo: fechado</p>
+          </div>
+          <div class="slide_img" id="third-img">
+            <h2  class="H2-slide-3"> Calc IMPACT</h2>
+            <p class="p-slide-3">Calcule seu IMC aqui</p>
+            <button id="Btn-slide-3"><a href="#">IMC</a>
+            </button>
+          </div>
+          <div class="slide_img" id="fourth-img">
+            <h2  class="H2-slide-4">Planos</h2>
+            <p class=" p-slide-4">Veja nossos planos e faça rápido sua matrícula</p>
+            <button id="Btn-slide-4"><a href="#">Planos</a>
+            </button>
+          </div>
+          <!-- fim -->
+          <!-- nav-auto -->
+          <div class="nav-auto">
+            <div class="btn-1"></div>
+            <div class="btn-2"></div>
+            <div class="btn-3"></div>
+            <div class="btn-4"></div>
+          </div>
+          <!-- fim -->
+        </div>
+        <!-- botão de passar slide -->
+        <div class="nav-manual" >
+          <label for="radio1" class="btn-manual"></label>
+          <label for="radio2" class="btn-manual"></label>
+          <label for="radio3" class="btn-manual"></label>
+          <label for="radio4" class="btn-manual"></label>
+        </div>
+        <!-- fim -->
+      </div>
+    </body>
+    <script src="assets/js/script.js"></script>
+</html>

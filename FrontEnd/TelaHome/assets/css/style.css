@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Noto+Sans:wght@400;700;800&display=swap');
+
+body{
+    margin: 0;
+    font-family:'Noto Sans',sans-serif;
+     font-family: 'Inter',sans-serif;
+     justify-content: center;
+     align-items: center;
+    
+}
+body * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+header{
+    background-color: #24252a;
+    height: 54px;
+  position: fixed;
+ z-index: 1;
+  width: 100%;
+  
+}
+#menu{
+    display: flex;
+    list-style: none;
+    gap: 0.2rem;
+    margin-left: 6rem;
+}
+#menu a{
+    display: block;
+    padding: 0.4;
+    margin-right: 4vw;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+#login-mobile{
+    display: none;
+}
+
+.logo img{
+    width: 154px;
+    max-width:100% ;
+}
+.logo h1{
+    color: #fff;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.nav-link:hover{
+opacity: 0.9;
+color: rgb(220, 6, 6);
+transition: 1s;
+}
+#login button{
+    border: 1px solid white;
+}
+.login-button button{
+    border: none;
+   background-color: transparent;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-top: 14px;
+   margin-right: 40px;
+}
+.login-button button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+.login-button a:hover{
+    opacity: 0.9;
+    color: rgb(220, 6, 6);
+    transition: 1s;
+    }
+#button_mob {
+    display: none;
+  }
+
+
+ 
+  
+  #first-img{
+    background-image: url(/TelaHome/assets/img/academia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 150vw;
+    height: 700px;
+    text-align: center;
+  }
+  #secund-img{
+    background-image: url(/TelaHome/assets/img/academia2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 150vw;
+    height: 700px;
+   text-align: center;
+  }
+  #third-img{
+    background-image: url(/TelaHome/assets/img/academia3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 150vw;
+    height: 700px;
+    text-align: center;
+  }
+  #fourth-img{
+    background-image: url(/TelaHome/assets/img/academia4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 150vw;
+    height: 700px;
+    text-align: center;
+  }
+  .slide_img h2{
+    font-weight: 800;
+    font-family:'Noto Sans',sans-serif;
+    font-size: 40px;
+    text-align: center;
+  }
+  .H2-slide-3{
+   margin-top: 250px;
+   margin-right: 35%;
+  }
+  .p-slide-3{
+    margin-right: 35%;
+    padding-top: 30px;
+  }
+  #Btn-slide-3{
+    margin-top: 40px;
+    margin-right: 35%;
+    border: none;
+    background-color: transparent;
+     padding: 5px 12px;
+     border-radius: 4px;
+     border: 2px solid white;
+     width: 85px;
+  }
+  
+   #Btn-slide-3 a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+   }
+   #Btn-slide-3 a:hover{
+    opacity: 0.9;
+    color: rgb(220, 6, 6);
+    transition: 1s;
+    }
+    .H2-slide-4{
+        margin-top: 250px;
+        margin-right: 64%;
+       }
+       .p-slide-4{
+        margin-right: 50%;
+        padding-top: 15px;
+      }
+      #Btn-slide-4{
+        margin-top: 55px;
+        margin-right: 66%;
+        border: none;
+        background-color: transparent;
+         padding: 5px 12px;
+         border-radius: 4px;
+         border: 2px solid white;
+         width: 85px;
+      }
+      
+       #Btn-slide-4 a{
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 14px;
+       }
+       #Btn-slide-4 a:hover{
+        opacity: 0.9;
+        color: rgb(220, 6, 6);
+        transition: 1s;
+        }
+        .H2-slide-2{
+            margin-top: 250px;
+            margin-right: 25%;
+           }
+           .p-slide-2{
+            margin-right: 25%;
+            padding-top: 15px;
+          }
+          .H2-slide-1{
+            margin-right: 67%;
+            margin-top: 50px;
+        }
+  .slide_img p{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .slider {
+    width:90vw;
+    margin: 0 auto;
+    height: 900px;
+    overflow: hidden;
+    padding-top: 200px;
+    z-index: -1;
+    display: flex;
+  }
+  .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+  }
+  .slides input {
+    display: none;
+  }
+  .slide_img {
+    width: 25%;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  
+  .nav-manual {
+    position: absolute;
+    width: 90vw;
+    margin-top: 40rem;
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .btn-manual {
+    border: 0.13rem solid rgb(220, 6, 6);
+    padding: 0.32rem;
+    border-radius: 0.32rem;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+
+  .btn-manual:hover {
+    background-color: rgb(220, 6, 6);
+  }
+  #radio1:checked ~ #first-img {
+    margin-left: 0%;
+  }
+  #radio2:checked ~ #first-img {
+    margin-left: -40%;
+  }
+  #radio3:checked ~ #first-img {
+    margin-left: -90%;
+  }
+  #radio4:checked ~ #first-img {
+    margin-left: -130%;
+  }
+ 
+  .nav-auto div {
+    border: 0.13rem solid #20a6ff;
+    padding: 0.32rem;
+    border-radius: 0.32rem;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .nav-auto {
+    position: absolute;
+    width: 90vw;
+    margin-top: 40rem;
+    display: flex;
+    justify-content: center;
+    gap:2.5rem;
+  }
+  #radio1:checked ~ .nav-auto .btn-1 {
+    background-color: rgb(220, 6, 6);
+  }
+  #radio2:checked ~ .nav-auto .btn-2 {
+    background-color: rgb(220, 6, 6);
+  }
+  #radio3:checked ~ .nav-auto .btn-3 {
+    background-color: rgb(220, 6, 6);
+  }
+  #radio4:checked ~ .nav-auto .btn-4 {
+    background-color: rgb(220, 6, 6);
+  }
+  @media only screen and (max-width:950px) {
+   #login{
+    display: none;
+   }
+   header{
+    position: relative;
+   }
+
+    #button_mob {
+        display: block;
+      }
+      #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 54px;
+        color: #fff;
+        right: 0px;
+        background:#24252a ;
+        z-index: 1000;
+        transition: 0.8s;
+        visibility: hidden;
+        overflow-y: auto;
+      }
+
+      #hamburgue {
+        width: 20px;
+        border-top: 2px solid;
+        display: block;
+        color: rgb(220, 6, 6);
+      }
+      
+      #hamburgue::after,
+      #hamburgue::before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        display: block;
+        background: blue;
+        margin-top: 4px;
+        background: currentColor;
+        transition: 0.6s;
+        position: relative;
+      }
+      #menu a {
+        padding :2rem 0 ;
+        margin: 0 2.5rem;
+        border-bottom: 1px solid rgb(220, 6, 6);
+      }
+      
+      #nav.active #hamburgue {
+        border-top-color: transparent;
+      }
+      
+      #nav.active #hamburgue::before {
+        transform: rotate(135deg);
+      }
+      
+      #nav.active #hamburgue::after {
+        transform: rotate(-135deg);
+        top: -6px;
+      }
+      #button_mob {
+        display: flex;
+        text-align: left; 
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background: none;
+        cursor: pointer;
+        border: none;
+      }
+      #nav.active #menu {
+        height: calc(100vh - 54px);
+        visibility: visible;
+        visibility: auto;
+      }
+      
+      #login-mobile{
+        display: flex;
+        border: none;
+      }
+      
+    
+   
+      
+}
+@media only screen and (max-width:774px) {
+ 
+    #login{
+        display: none;
+       }
+        #button_mob {
+            display: block;
+          }
+          #menu {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 0;
+            top: 54px;
+            color: #fff;
+            right: 0px;
+            background:#24252a ;
+            z-index: 1000;
+            transition: 0.8s;
+            visibility: hidden;
+            overflow-y: auto;
+          }
+    
+          #hamburgue {
+            width: 20px;
+            border-top: 2px solid;
+            display: block;
+            color: rgb(220, 6, 6);
+          }
+          
+          #hamburgue::after,
+          #hamburgue::before {
+            content: "";
+            width: 20px;
+            height: 2px;
+            display: block;
+            background: blue;
+            margin-top: 4px;
+            background: currentColor;
+            transition: 0.6s;
+            position: relative;
+          }
+          #nav-item {
+            padding :2rem 0 ;
+            margin: 0 2.5rem;
+            border-bottom: 1px solid rgb(220, 6, 6);
+          }
+          
+          #nav.active #hamburgue {
+            border-top-color: transparent;
+          }
+          
+          #nav.active #hamburgue::before {
+            transform: rotate(135deg);
+          }
+          
+          #nav.active #hamburgue::after {
+            transform: rotate(-135deg);
+            top: -6px;
+          }
+          #button_mob {
+            display: flex;
+            text-align: left; 
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background: none;
+            cursor: pointer;
+            border: none;
+          }
+          #nav.active #menu {
+            height: calc(100vh - 54px);
+            visibility: visible;
+            visibility: auto;
+          }
+          #login-mobile{
+            display: flex;
+            border: none;
+          }
+          
+         
+}
