@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Noto+Sans:wght@400;700&display=swap');
-body{
-    margin: 0;
-    font-family:'Noto Sans',sans-serif;
-     font-family: 'Inter',sans-serif;
-}
-body * {
-    padding: 0%;
-    margin: 0%;
+* {
+    margin: 0 ;
+    padding: 0;
     box-sizing: border-box;
-    background-image: url(academia2.jpg);
+    font-family:'Noto Sans', 'sans-serif';
 }
+
+body{
+    font-size: 1.3vw;
+}
+
 header{
     background-color: #24252a;
     height: 54px;
-  width: 100%;
+    position: fixed;
+    width: 100%;
+    margin: 0;
   
 }
 #menu{
@@ -39,7 +41,6 @@ header{
 .logo img{
     width: 154px;
     max-width:100% ;
-    padding-left:10px ;
 }
 .logo h1{
     color: #fff;
@@ -63,9 +64,9 @@ header{
     font-weight: 400;
 }
 .nav-link:hover{
-opacity: 0.9;
-color: rgb(220, 6, 6);
-transition: 1s;
+    opacity: 0.9;
+    color: rgb(220, 6, 6);
+    transition: 1s;
 }
 #login button{
     border: 1px solid white;
@@ -92,119 +93,90 @@ transition: 1s;
 
 #button_mob {
     display: none;
-  }
-
-
-
-
-
-.main-login{
-    width: 96vw;
-    height: 700px;
-    background-color:white ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 170px;
 }
-.left-login{
-    width: 46vw;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
-.left-login>h1{
-    font-size:2vw ;
-    color: rgb(220, 6, 6);
+tr:nth-child(even) {
+    background-color: #FFFFFF;
+    color: #000000;
 }
-.right-login{
-    width: 46vw;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card-login{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
-}
-.card-login>h1{
-    color: rgb(220, 6, 6);
-    font-weight: 800;
-    margin: 0;
-}
-.textfield{
-    width: 100%;
-    display: flex;
+
+
+input{
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     margin: 10px 0;
 }
-.left-login-img{
-    width: 30vw;
+
+.text{
+    padding-bottom: 5vw;
+    padding-top: 3vw;
 }
-.textfield>input{
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px 0 15px 40px;
-    background-color: rgb(231, 213, 213) ;
+
+.text>h1{
+    color: rgb(255, 0, 0);
+    font-size: 5vw;
+    text-align: center;
+}
+
+.text>p{
+    margin-left: 20vw;
+    padding-top: 3vw;
+    width: 60vw;
+    height: 30vh;
+}
+
+h1{
+    color: #24252a;
+}
+
+section.pagamento{
+    display: flex;
+    max-width: 15vw;
+    justify-content: space-around;
+    padding-left: 23vw;
+    margin-left: 28vw;
+}
+
+.form_pagamento{
+    border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
-    font-size: 12pt;
-    outline: none;
-    color: black;
-    box-sizing: border-box;
+    padding: 10px 30px;
+    width: 50vw;
 }
 
-.textfield > label{
-    color: black;
-    margin-bottom: 10px;
-}
-.textfield > input ::placeholder{
-    color: #f0ffff94;
-   
+.form_pagamento form{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.btn-login{
+.form-100{
+    width: 45vw;
+}
+.form-50{
+    width: 45vw;
+    display:flex;
+}
+
+.form_pagamento input[type=text]{
+    padding-left: 1vw;
+    width: 45vw;
+    height: 40px;
+    border:1px solid #ccc
+}
+
+.form_pagamento button{
     width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
-    border: none;
-    border-radius:8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: white;
-    background-color: rgb(220, 6, 6);
+    height: 40px;
+    border: 0;
     cursor: pointer;
-}
-.btn-login:hover{
     background-color: rgb(255, 0, 0);
+    color: white;
 }
-input[type='checkbox']{
-    width: 15px;
-    height: 15px;
-    accent-color: rgb(220, 6, 6);
-}
-
-i{
-    position: absolute;
-    padding: 10px 10px;
-    margin-top: 30px;
-}
-
 
 .main_footer{ 
 	background-color:rgb(220, 6, 6); 
@@ -411,23 +383,41 @@ i{
 }
 
 @media only screen and (max-width:950px) {
-    .card-login{
+    .card_calc{
         width: 85%;
     }
-    .main-login{
-        height: 700px;
+    .card_calc>h1{
+        font-size: 2.5vw;
     }
-   #login{
-    display: none;
-   }
-   header{
-    position: relative;
-   }
+    .tb{
+        font-size: 2.2vw;
+    }
+    .tabela{
+        flex-direction: column;
+    }
+    .texto>h2{
+        font-size:2vw ;
+    }
+    .texto>h3{
+        font-size:1.3vw ;
+    }
+    .texto>p{
+        font-size:1.4vw ;
+    }
+    .texto{
+        line-height: 3.5vh;
+    }
+    #login{
+        display: none;
+    }
+    header{
+        position: relative;
+    }
 
     #button_mob {
         display: block;
-      }
-      #menu {
+    }
+    #menu {
         display: block;
         position: absolute;
         width: 100%;
@@ -440,17 +430,17 @@ i{
         transition: 0.8s;
         visibility: hidden;
         overflow-y: auto;
-      }
+    }
 
-      #hamburgue {
+    #hamburgue {
         width: 20px;
         border-top: 2px solid;
         display: block;
         color: rgb(220, 6, 6);
-      }
-      
-      #hamburgue::after,
-      #hamburgue::before {
+    }
+
+    #hamburgue::after,
+    #hamburgue::before {
         content: "";
         width: 20px;
         height: 2px;
@@ -460,26 +450,26 @@ i{
         background: currentColor;
         transition: 0.6s;
         position: relative;
-      }
-      #menu a {
+    }
+    #menu a {
         padding :2rem 0 ;
         margin: 0 2.5rem;
         border-bottom: 1px solid rgb(220, 6, 6);
-      }
-      
-      #nav.active #hamburgue {
+    }
+
+    #nav.active #hamburgue {
         border-top-color: transparent;
-      }
-      
-      #nav.active #hamburgue::before {
+    }
+
+    #nav.active #hamburgue::before {
         transform: rotate(135deg);
-      }
-      
-      #nav.active #hamburgue::after {
+    }
+
+    #nav.active #hamburgue::after {
         transform: rotate(-135deg);
         top: -6px;
-      }
-      #button_mob {
+    }
+    #button_mob {
         display: flex;
         text-align: left; 
         justify-content: space-between;
@@ -488,160 +478,207 @@ i{
         background: none;
         cursor: pointer;
         border: none;
-      }
-      #nav.active #menu {
-        height: calc(100vh - 54px);
+    }
+    #nav.active #menu {
+        height: calc(168vh - 54px);
         visibility: visible;
         visibility: auto;
-      }
-      
-      #login-mobile{
+    }
+
+    #login-mobile{
         display: flex;
         border: none;
-      }
-      
-    
-   
-      
-}
-@media only screen and (max-width:600px) {
-    .main-login{
-        flex-direction: column;
+    }   
+    .text>P{
+        font-size: 2vw;
     }
-    .left-login>h1{
-        display: none;
+    label{
+        font-size: 1.5vw;
     }
-    .left-login{
-        width: 100%;
-        height: auto;
+    h1{
+        font-size: 6vw;
     }
-    .right-login{
-        width: 100%;
-        height: auto;
-    }
-    .left-login-img{
+
+    .form_pagamento{
         width: 50vw;
+        margin-bottom: 40px;
     }
-    .card-login{
-      width: 80%;
+
+    .form-50{
+        display: block;
     }
 
     .colfooter{
-      font-size: 1.5vw;
-  }
+        font-size: 1.5vw;
+    }
 
-  .colfooter>a{
-      margin-left: 1vw;
-  }
-  
-  .colfooter>p{
-      font-size: 1.5vw;
-  }
+    .colfooter>a{
+        margin-left: 1vw;
+    }
 
-  .main_footer_copy>p{
-      font-size: 1vw;
-  }
-  
+    .colfooter>p{
+        font-size: 1.5vw;
+    }
+
+    .main_footer_copy>p{
+        font-size: 1vw;
+    }
+            
 }
-@media only screen and (max-width:774px) {
- 
+
+@media only screen and (max-width:600px) {   
+
+    .card_calc{
+        width: 85%;
+    }
+    .card_calc>h1{
+        font-size: 3.5vw;
+    }
+
+    .tabela{
+        flex-direction: column;
+    }
+    .tb{
+        font-size: 3.2vw;
+    }
+    .texto>h2{
+        font-size:3vw; 
+    }
+    .texto>h3{
+        font-size:2.3vw ;
+    }
+    .texto>p{
+        font-size:2vw ;
+    }
+    .texto{
+        line-height: 3.5vh;
+    }
     #login{
         display: none;
-       }
-        #button_mob {
-            display: block;
-          }
-          #menu {
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 0;
-            top: 54px;
-            color: #fff;
-            right: 0px;
-            background:#24252a ;
-            z-index: 1000;
-            transition: 0.8s;
-            visibility: hidden;
-            overflow-y: auto;
-          }
-    
-          #hamburgue {
-            width: 20px;
-            border-top: 2px solid;
-            display: block;
-            color: rgb(220, 6, 6);
-          }
-          
-          #hamburgue::after,
-          #hamburgue::before {
-            content: "";
-            width: 20px;
-            height: 2px;
-            display: block;
-            background: blue;
-            margin-top: 4px;
-            background: currentColor;
-            transition: 0.6s;
-            position: relative;
-          }
-          #nav-item {
-            padding :2rem 0 ;
-            margin: 0 2.5rem;
-            border-bottom: 1px solid rgb(220, 6, 6);
-          }
-          
-          #nav.active #hamburgue {
-            border-top-color: transparent;
-          }
-          
-          #nav.active #hamburgue::before {
-            transform: rotate(135deg);
-          }
-          
-          #nav.active #hamburgue::after {
-            transform: rotate(-135deg);
-            top: -6px;
-          }
-          #button_mob {
-            display: flex;
-            text-align: left; 
-            justify-content: space-between;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            background: none;
-            cursor: pointer;
-            border: none;
-          }
-          #nav.active #menu {
-            height: calc(100vh - 54px);
-            visibility: visible;
-            visibility: auto;
-          }
-          #login-mobile{
-            display: flex;
-            border: none;
-          }
+    }
 
-          .main{
-            height: 10%;
-            padding-bottom: 10vw;
-        }
-        .colfooter{
-            font-size: 2.5vw;
-        }
+    header{
+        position: relative;
+    }
+    #button_mob {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 54px;
+        color: #fff;
+        right: 0px;
+        background:#24252a ;
+        z-index: 1000;
+        transition: 0.8s;
+        visibility: hidden;
+        overflow-y: auto;
+    }
+
+    #hamburgue {
+        width: 20px;
+        border-top: 2px solid;
+        display: block;
+        color: rgb(220, 6, 6);
+    }
     
-        .colfooter>a{
-            margin-left: 1vw;
-        }
+    #hamburgue::after,
+    #hamburgue::before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        display: block;
+        background: blue;
+        margin-top: 4px;
+        background: currentColor;
+        transition: 0.6s;
+        position: relative;
+    }
+    #menu a {
+        padding :2rem 0 ;
+        margin: 0 2.5rem;
+        border-bottom: 1px solid rgb(220, 6, 6);
+    }
     
-        .colfooter>p{
-            font-size: 2vw;
-        }
+    #nav.active #hamburgue {
+     border-top-color: transparent;
+    }
     
-        .main_footer_copy>p{
-            font-size: 2vw;
-        }   
-          
-         
+    #nav.active #hamburgue::before {
+        transform: rotate(135deg);
+    }
+    
+    #nav.active #hamburgue::after {
+        transform: rotate(-135deg);
+        top: -6px;
+    }
+    #button_mob {
+        display: flex;
+        text-align: left; 
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background: none;
+        cursor: pointer;
+        border: none;
+    }
+    #nav.active #menu {
+        height: calc(188vh - 54px);
+        visibility: visible;
+        visibility: auto;
+    }
+    
+    #login-mobile{
+     display: flex;
+     border: none;
+    }
+    
+    .text{
+        font-size: 3vw;
+    }
+
+    label{
+        font-size: 3vw;
+    }
+
+    h1{
+        font-size: 2vw;
+    }
+
+    .form_pagamento{
+        width: 100vw;
+    }
+
+    .form_pagamento input[type=text]{
+        width: 40vw;
+        height: 20px;
+    }
+
+    .form-50{
+        display: block;
+    }
+
+    .main{
+        height: 10%;
+        padding-bottom: 10vw;
+    }
+    .colfooter{
+        font-size: 2.5vw;
+    }
+
+    .colfooter>a{
+        margin-left: 1vw;
+    }
+
+    .colfooter>p{
+        font-size: 2vw;
+    }
+
+    .main_footer_copy>p{
+        font-size: 2vw;
+    }   
 }
