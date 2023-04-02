@@ -17,10 +17,8 @@ body * {
 header{
     background-color: #24252a;
     height: 54px;
-  position: fixed;
- z-index: 1;
-  width: 100%;
-  
+    z-index: 1;
+    width: 100%;
 }
 #menu{
     display: flex;
@@ -44,6 +42,7 @@ header{
 .logo img{
     width: 154px;
     max-width:100% ;
+    padding-left:10px ;
 }
 .logo h1{
     color: #fff;
@@ -101,16 +100,17 @@ transition: 1s;
  
   
   #first-img{
-    background-image: url(/TelaHome/assets/img/academia.jpg);
+    background: url(academia.jpg);
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     width: 150vw;
     height: 700px;
     text-align: center;
+    
   }
   #secund-img{
-    background-image: url(/TelaHome/assets/img/academia2.jpg);
+    background-image: url(academia2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     color: white;
@@ -119,7 +119,7 @@ transition: 1s;
    text-align: center;
   }
   #third-img{
-    background-image: url(/TelaHome/assets/img/academia3.jpg);
+    background-image: url(academia3.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     color: white;
@@ -128,7 +128,7 @@ transition: 1s;
     text-align: center;
   }
   #fourth-img{
-    background-image: url(/TelaHome/assets/img/academia4.jpg);
+    background-image: url(academia4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     color: white;
@@ -144,6 +144,7 @@ transition: 1s;
   }
   .H2-slide-3{
    margin-top: 250px;
+   color: rgb(220, 6, 6);
    margin-right: 35%;
   }
   .p-slide-3{
@@ -174,15 +175,16 @@ transition: 1s;
     }
     .H2-slide-4{
         margin-top: 250px;
-        margin-right: 64%;
+        margin-right: 45%;
+        color: rgb(220, 6, 6);
        }
        .p-slide-4{
-        margin-right: 50%;
+        margin-right: 45%;
         padding-top: 15px;
       }
       #Btn-slide-4{
         margin-top: 55px;
-        margin-right: 66%;
+        margin-right: 45%;
         border: none;
         background-color: transparent;
          padding: 5px 12px;
@@ -205,14 +207,16 @@ transition: 1s;
         .H2-slide-2{
             margin-top: 250px;
             margin-right: 25%;
+            color: rgb(220, 6, 6);
            }
            .p-slide-2{
             margin-right: 25%;
             padding-top: 15px;
           }
           .H2-slide-1{
-            margin-right: 67%;
-            margin-top: 50px;
+           text-align: center;
+           color: rgb(220, 6, 6);
+            margin-top: 350px;
         }
   .slide_img p{
     font-size: 18px;
@@ -239,6 +243,7 @@ transition: 1s;
     width: 25%;
     position: relative;
     transition: 0.4s;
+    
   }
 
   
@@ -249,7 +254,6 @@ transition: 1s;
     gap: 2.5rem;
     display: flex;
     justify-content: center;
-    
   }
 
   .btn-manual {
@@ -336,7 +340,7 @@ transition: 1s;
         display: block;
         color: rgb(220, 6, 6);
       }
-      
+
       #hamburgue::after,
       #hamburgue::before {
         content: "";
@@ -471,6 +475,5 @@ transition: 1s;
             display: flex;
             border: none;
           }
-          
-         
+        
 }

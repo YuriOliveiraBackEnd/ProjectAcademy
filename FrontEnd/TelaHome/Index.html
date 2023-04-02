@@ -46,8 +46,9 @@
           <input type="radio" name="btn-radio" id="radio3"  class="radios"/>
           <input type="radio" name="btn-radio" id="radio4"  class="radios"/>
           <!--fim-->
-          <div class="slide_img" id="first-img">
+          <div class="slide_img" id="first-img" >
             <h2 class="H2-slide-1"> Seja Bem vindo a </br>IMPACT </h2>
+            
           </div>
           <div class="slide_img" id="secund-img">
             <h2  class="H2-slide-2"> Horário de </br>Funcionamento </h2>
@@ -63,10 +64,127 @@
           </div>
           <div class="slide_img" id="fourth-img">
             <h2  class="H2-slide-4">Planos</h2>
-            <p class=" p-slide-4">Veja nossos planos e faça rápido sua matrícula</p>
+            <p class=" p-slide-4">Veja nossos planos e </p> 
+            <p class=" p-slide-4"> faça rápido sua matrícula</p>
             <button id="Btn-slide-4"><a href="#">Planos</a>
             </button>
           </div>
+          <style >
+             #first-img{
+    background: url(academia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 150vw;
+    height: 700px;
+    text-align: center;
+    
+  }
+  #secund-img{
+    background-image: url(academia3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 150vw;
+    height: 700px;
+   text-align: center;
+  }
+  #third-img{
+    background-image: url(academia2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 150vw;
+    height: 700px;
+    text-align: center;
+  }
+  #fourth-img{
+    background-image: url(academia4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 150vw;
+    height: 700px;
+    text-align: center;
+  }
+@media only screen and (max-width:774px) {
+  .slider {
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 0px;
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+
+}
+.nav-manual {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.p-slide-4{
+        margin-right: 0%;
+}
+.H2-slide-4{
+        margin-top: 250px;
+        margin-right:0% ;
+}
+#Btn-slide-4{
+        margin-right: 0%;
+}
+.nav-auto {
+  position: absolute;
+  width: 100%;
+}
+#radio3:checked ~ #first-img {
+    margin-left: -80%;
+  }
+  #radio4:checked ~ #first-img {
+    margin-left: -123%;
+  }
+ 
+  }
+  @media only screen and (max-width:500px) {
+    .H2-slide-1{
+        margin-top: 300px;
+}
+.p-slide-4{
+        margin-left: 30%;
+}
+.H2-slide-4{
+        margin-top: 250px;
+        margin-left: 30%;
+}
+#Btn-slide-4{
+  margin-left: 30%;
+}
+.p-slide-3{
+        margin-right: 5%;
+}
+.H2-slide-3{
+        margin-top: 250px;
+        margin-right: 5%;
+}
+#Btn-slide-3{
+  margin-right:5%;
+}
+.p-slide-2{
+        margin-right: 0%;
+}
+.H2-slide-2{
+        margin-top: 250px;
+        margin-right: 0%;
+}
+#Btn-slide-2{
+  margin-right: 0%;
+}
+
+  }
+  </style>
           <!-- fim -->
           <!-- nav-auto -->
           <div class="nav-auto">

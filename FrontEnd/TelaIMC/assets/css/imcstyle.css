@@ -11,7 +11,6 @@
 header{
     background-color: #24252a;
     height: 54px;
-    position: fixed;
     width: 100%;
     margin: 0;
   
@@ -38,6 +37,7 @@ header{
 .logo img{
     width: 154px;
     max-width:100% ;
+    padding-left:10px ;
 }
 .logo h1{
     color: #fff;
@@ -121,7 +121,7 @@ input{
     font-family: "Roboto", Sans-serif;
     font-weight: 400;
     line-height: 6vh;
-    margin-top: 150px;
+    margin-top: 195px;
 
 }
 
