@@ -7,13 +7,76 @@
     font-family:'Noto Sans',sans-serif;
     font-family: 'Inter',sans-serif;
 }
-
+body{
+    transition: background 0.2s linear;
+}
 header{
     background-color: #24252a;
     height: 54px;
     width: 100%;
     margin: 0;
-  
+}
+.dark body{
+    background:#232c35;
+}
+.dark tr:nth-child(even) {
+    background-color: #24252a;
+    color: #fff;
+    }
+    
+.dark .texto{
+ color: #fff;
+}
+.dark .main-login{
+    background:#232c35;
+}
+.dark .card_calc{
+     background-color: #24252a;;
+}
+.dark .card_calc label{
+    color: white;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.label-mood-dark{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  margin-top: 0;
+    padding: 5px;
+    position: relative;
+    height: 22px;
+    width: 48px;
+    margin-top: 17px;
+
+    transform: scale(1.5);
+}
+.label-mood-dark .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    
+    height: 20px;
+    width: 20px;
+    margin-top: 0;
+    transform: translate(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label-mood-dark .ball{
+    transform: translateX(24px);
+}
+.fa-moon{
+    color:#f1c40f ;
+}
+.fa-sun{
+    color:#f39c12 ;
 }
 #menu{
     display: flex;
@@ -461,6 +524,10 @@ table {
 }
 
 @media only screen and (max-width:950px) {
+    .label-mood-dark{
+        margin-right:50px ;
+        z-index: 1;
+    }
     .card_calc{
         width: 85%;
     }
